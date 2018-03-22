@@ -1,0 +1,21 @@
+链接：https://www.nowcoder.com/questionTerminal/9023a0c988684a53960365b889ceaf5e
+来源：牛客网
+
+class Solution {
+public:
+    TreeLinkNode* GetNext(TreeLinkNode* pNode)
+    {
+        TreeLinkNode* ret = NULL;
+        if(pNode->right != NULL){//如果当前节点有右子树,则右子树最左边的那个节点就是
+            ret = pNode->right;
+            while(ret->left != NULL)
+                ret = ret->left;
+            return ret;
+        }
+        ret = pNode;
+        while(ret->next != NULL && ret == ret->next->right){//如果当前节点没有右子树，并且是其父节点的左子树
+            ret = ret->next;
+        }
+        return ret->next;
+    }
+};

@@ -1,0 +1,24 @@
+链接：https://www.nowcoder.com/questionTerminal/6a296eb82cf844ca8539b57c23e6e9bf
+来源：牛客网
+
+//这道题显然用priority_queue实现，复杂度O(nlogk)，加入使用vector作为hash那么是O(n*k)，如果使用sort复杂度是O(nlogn),此外边界条件调了我很久if(input.size() < k || k <= 0)， 
+class Solution {
+public:
+    vector<int> GetLeastNumbers_Solution(vector<int> input, int k) {
+        priority_queue<int> Q;
+        vector<int> res;
+        if(input.size() < k || k <= 0) return res;
+        for(int i = 0; i < input.size(); ++i){
+            if(Q.size() < k) Q.push(input[i]);
+            else if(input[i] < Q.top()){
+                Q.pop(); Q.push(input[i]);
+            }
+        }
+        while(!Q.empty()){
+   res.push_back(Q.top());
+   Q.pop();
+        }
+        return res;
+         
+    }
+};

@@ -1,0 +1,36 @@
+链接：https://www.nowcoder.com/questionTerminal/564f4c26aa584921bc75623e48ca3011
+来源：牛客网
+
+class Solution {
+public:
+    void Mirror(TreeNode *pRoot) {
+        //递归实现
+        /*if(pRoot==NULL)
+            return;
+        TreeNode *ptemp=pRoot->left;
+        pRoot->left=pRoot->right;
+        pRoot->right=ptemp;
+        if(pRoot->left)
+            Mirror(pRoot->left);
+        if(pRoot->right)
+            Mirror(pRoot->right);*/
+        //非递归实现
+        if(pRoot==NULL)
+            return;
+        stack<TreeNode*> stackNode;
+        stackNode.push(pRoot);
+        while(stackNode.size()){
+            TreeNode* tree=stackNode.top();
+            stackNode.pop();
+            if(tree->left!=NULL || tree->right!=NULL){
+                TreeNode *ptemp=tree->left;
+                tree->left=tree->right;
+                tree->right=ptemp;
+            }
+            if(tree->left)
+                stackNode.push(tree->left);
+            if(tree->right)
+                stackNode.push(tree->right);
+        }
+    }
+};

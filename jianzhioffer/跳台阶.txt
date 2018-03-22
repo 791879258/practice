@@ -1,0 +1,15 @@
+class Solution {
+public:
+    int jumpFloor(int n) {
+        if (n==0||n==1)
+            return 1;
+       int pre=1,prepre=1,result=0;
+        for(int i=2;i<=n;i++)
+        {
+            result=pre+prepre;
+            prepre=pre;
+            pre=result;
+        }
+        return result;
+    }
+};

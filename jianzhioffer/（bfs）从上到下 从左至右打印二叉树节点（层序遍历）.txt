@@ -1,0 +1,41 @@
+链接：https://www.nowcoder.com/questionTerminal/7fe2212963db4790b57431d9ed259701
+来源：牛客网
+
+class Solution {
+public:
+    vector<int> PrintFromTopToBottom(TreeNode* root) {
+        vector<int> res;
+        if(root==NULL)
+            return res;
+        queue<TreeNode*> q;
+        q.push(root);
+        while(!q.empty()){
+            res.push_back(q.front()->val);
+            if(q.front()->left!=NULL)
+                q.push(q.front()->left);
+            if(q.front()->right!=NULL)
+                q.push(q.front()->right);
+            q.pop();
+        }
+        return res;
+    }
+};
+链接：https://www.nowcoder.com/questionTerminal/7fe2212963db4790b57431d9ed259701
+来源：牛客网
+bfs:
+class Solution {
+public:
+    vector<int> PrintFromTopToBottom(TreeNode *rt) {
+        queue<TreeNode*> q;
+        q.push(rt);
+        vector<int> r;
+        while(!q.empty()){
+            rt = q.front(); q.pop();
+            if(!rt) continue;
+            r.push_back(rt -> val);
+            q.push(rt -> left);
+            q.push(rt -> right);
+        }
+        return r;
+    }
+};

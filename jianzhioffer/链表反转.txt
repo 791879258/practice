@@ -1,0 +1,26 @@
+链接：https://www.nowcoder.com/questionTerminal/75e878df47f24fdc9dc3e400ec6058ca
+来源：牛客网
+链接：https://www.nowcoder.com/questionTerminal/75e878df47f24fdc9dc3e400ec6058ca
+来源：牛客网
+
+/*简单模拟题。。。这种问题代码越简单越清晰吧。。不要写太复杂了。。马客(Mark)
+struct ListNode {
+    int val;
+    struct ListNode *next;
+    ListNode(int x) :
+            val(x), next(NULL) {
+    }
+};*/
+class Solution {
+public:
+    ListNode* ReverseList(ListNode* pHead) {
+        ListNode* h = NULL;
+        for(ListNode* p = pHead; p; ){
+            ListNode* tmp = p -> next;
+            p -> next = h;
+            h = p;
+            p = tmp;
+        }
+        return h;
+    }
+};

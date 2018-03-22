@@ -1,0 +1,22 @@
+链接：https://www.nowcoder.com/questionTerminal/b736e784e3e34731af99065031301bca
+来源：牛客网
+
+class Solution {
+    vector<vector<int> >allRes;
+    vector<int> tmp;
+    void dfsFind(TreeNode * node , int num){
+        tmp.push_back(node->val);
+        if(num-node->val == 0 && !node->left && !node->right)
+            allRes.push_back(tmp);
+        else {
+            if(node->left) dfsFind(node->left, num-node->val);
+            if(node->right) dfsFind(node->right, num-node->val);
+        }
+        tmp.pop_back(); 
+    }
+public:
+    vector<vector<int> > FindPath(TreeNode* root,int expectNumber) {
+        if(root) dfsFind(root, expectNumber);
+        return allRes;
+    }
+};

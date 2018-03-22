@@ -1,0 +1,42 @@
+https://github.com/linw7 我之前总结过一些笔试面试知识点，C项目的话可以看一下我首页第二个。
+
+CSDN上K折交叉验证sklearn.model_selection.KFold（kf.split(X):）的讲解：http://blog.csdn.net/kancy110/article/details/74910185
+
+利用Scikit-Learn实现的TF-IDF（TfidfVectorizer()）：http://blog.csdn.net/baimafujinji/article/details/51476117
+
+from sklearn.feature_extraction.text import CountVectorizer|CountVectorizer(stop_words='english')的讲解：
+https://www.cnblogs.com/Haichao-Zhang/p/5220974.html
+
+讲稀疏矩阵的（from scipy.sparse import *#coo_matrix, vstack）：http://blog.csdn.net/pipisorry/article/details/41762945
+
+十分钟搞定pandas：http://python.jobbole.com/84416/
+
+xgboost安装：http://blog.csdn.net/xizero00/article/details/73008330
+
+time模块CSDN：http://blog.csdn.net/SeeTheWorld518/article/details/48314501
+
+pandas手册concat,append,merge有很多例子:http://pandas.pydata.org/pandas-docs/stable/merging.html
+
+Pandas之drop_duplicates：去除重复项CSDN: http://blog.csdn.net/weixin_37226516/article/details/72846687
+
+pandas常用函数：http://blog.csdn.net/zhuxiaodong030/article/details/54316345
+
+pandas中DataFrame关于显示值省略的解决方法(常用的有pd.set_option('max_colwidth'/max_columns,200);pd.set_option('display.height',2000))：http://blog.csdn.net/xiaodongxiexie/article/details/70147683 
+
+如何理解常量指针与指针常量?:https://www.zhihu.com/question/19829354
+
+数据挖掘比赛之“滑窗法”：http://blog.csdn.net/oXiaoBuDianEr123/article/details/79309022
+JDATA算法大赛入门(score0.07+时间滑动窗口特征＋xgboost模型)https://github.com/foursking1/jd
+https://github.com/daoliker/JData
+
+DataFoutain:http://www.datafountain.cn/#/competitions/283/data-download
+
+GBDT天池直播：https://tianchi.aliyun.com/forum/new_articleDetail.html?spm=5176.11165238.0.0.423343c9Q0lK3b&raceId=&postsId=2761
+
+https://tianchi.aliyun.com/forum/new_articleDetail.html?spm=5176.11165238.0.0.423343c9ARu6Pk&raceId=&postsId=2672
+
+https://tianchi.aliyun.com/forum/videoStream.html#postsId=3179
+
+KESCI：https://www.kesci.com/apps/home/project/59a9307bc8d2787da4ddcf94
+
+

@@ -1,0 +1,41 @@
+湖南大学的大佬JDD,CCF视频blibli和github：https://github.com/wangle1218/CCF-Reputation-evaluation-score-prediction-of-the-scenic-spot
+
+IJCAI-17 口碑商家客流量预测：https://tianchi.aliyun.com/competition/information.htm?spm=5176.100067.5678.2.2ed9a806uaeW2w&raceId=231591
+余音代码(较简单)：https://github.com/lytforgood/Customer_Flow_Forecasts
+
+Datacastle用户贷款风险预测：http://www.pkbigdata.com/common/cmpt/%E7%94%A8%E6%88%B7%E8%B4%B7%E6%AC%BE%E9%A3%8E%E9%99%A9%E9%A2%84%E6%B5%8B_%E7%AB%9E%E8%B5%9B%E4%BF%A1%E6%81%AF.html
+我曾经跨过山河大海（hczheng）代码：https://github.com/hczheng/Rong360/tree/master/code
+
+datacastle 精品旅行服务成单预测：http://www.dcjingsai.com/common/cmpt/%E7%B2%BE%E5%93%81%E6%97%85%E8%A1%8C%E6%9C%8D%E5%8A%A1%E6%88%90%E5%8D%95%E9%A2%84%E6%B5%8B_%E7%AB%9E%E8%B5%9B%E4%BF%A1%E6%81%AF.html
+baseline（0.9466）代码：https://github.com/Nipi64310/baseline_baseline
+
+阿里音乐流行趋势预测大赛：https://tianchi.aliyun.com/competition/introduction.htm?spm=5176.100066.0.0.72e78579XVAkAj&raceId=231531
+排名613的代码（认真详细 可入门）：https://github.com/strint/AliMusicTrendPredict
+排名613逻辑回归及OWLQN的算法和实现（照片笔记面试可用）：https://github.com/strint/LogisticRegression_OWLQN_Notes
+
+O2O天池网址：https://tianchi.aliyun.com/competition/information.htm?spm=0.0.5678.0.VGcMY2&raceId=231587
+余音代码（pandasql）：https://github.com/lytforgood/O2O-Coupon-Usage-Forecast
+pandasql例子：http://blog.yhat.com/posts/pandasql-sql-for-pandas-dataframes.html
+余音的GBDTdemo示例和trick(代码)非常赞:https://github.com/lytforgood/MachineLearningTrick
+wepon代码：https://github.com/wepe/O2O-Coupon-Usage-Forecast
+
+Datacastle微额借款用户人品预测大赛：http://www.pkbigdata.com/common/cmpt/%E5%BE%AE%E9%A2%9D%E5%80%9F%E6%AC%BE%E7%94%A8%E6%88%B7%E4%BA%BA%E5%93%81%E9%A2%84%E6%B5%8B%E5%A4%A7%E8%B5%9B_%E7%AB%9E%E8%B5%9B%E4%BF%A1%E6%81%AF.html
+wepon代码：https://github.com/wepe/DataCastle-Solution
+
+Otto Group Product Classification Challenge：
+wepon代码：https://github.com/wepe/Kaggle-Solution/tree/master/Otto%20Group%20Product%20Classification%20Challenge
+
+Kaggle-Solution/Data Science London/use-sklearn_knn_svm_NB_LR.py：
+wepon代码：https://github.com/wepe/Kaggle-Solution/blob/master/Data%20Science%20London/use-sklearn_knn_svm_NB_LR.py
+
+nlp的Bag of Words Meets Bags of Popcorn：https://www.kaggle.com/c/word2vec-nlp-tutorial/discussion
+代码：https://github.com/lijingpeng/kaggle/blob/master/competitions/Bag_of_Words/bags_of_words.ipynb
+此作者其他比赛也值得看：https://github.com/lijingpeng/kaggle
+
+kaggle群苍老师github（含nlp项目）:https://github.com/qqgeogor
+
+Datacastle 精品rank5 的博客：http://blog.csdn.net/Mark_LQ
+https://github.com/SunnyMarkLiu/Kaggle_Competitions
+
+携程-出行产品未来14个月销量预测-第七名代码解读：http://blog.csdn.net/h4565445654/article/details/72232637
+https://github.com/zhangyuepeng/Ctrip14

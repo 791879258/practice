@@ -1,0 +1,10 @@
+链接：https://www.nowcoder.com/questionTerminal/7a0da8fc483247ff8800059e12d7caf1
+来源：牛客网
+//用公式是不可以的，公式里有乘法！！实现乘法可以用sizeof多维数组，两行代码就可以
+class Solution {
+public:
+    int Sum_Solution(int n) {
+        bool a[n][n+1];
+        return sizeof(a)>>1;
+    }
+};

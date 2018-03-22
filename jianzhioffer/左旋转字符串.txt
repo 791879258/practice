@@ -1,0 +1,48 @@
+链接：https://www.nowcoder.com/questionTerminal/12d959b108cb42b1ab72cef4d36af5ec
+来源：牛客网
+
+    /*
+ 
+    无力吐槽你们的做法了，这种AC，你们觉得面试能过吗？这道题考的核心是应聘者是不是可以灵活利用字符串翻转。假设字符串abcdef，n=3，设X=abc，Y=def，所以字符串可以表示成XY，如题干，问如何求得YX。假设X的翻转为XT，XT=cba，同理YT=fed，那么YX=(XTYT)T，三次翻转后可得结果。
+ 
+    */
+ 
+    class Solution {
+public:
+    void fun(string &s,int start,int end)
+    {
+        char temp;
+        while(start<end)
+        {
+            temp=s[start];
+            s[start]=s[end];
+            s[end]=temp;
+            start++;
+            end--;
+        }
+    }
+    string LeftRotateString(string str, int n) {
+        int len=str.length();
+        if(0==len || 0==n)
+            return str;
+        string &temp=str;
+        fun(temp,0,n-1);
+        fun(temp,n,len-1);
+        fun(temp,0,len-1);
+        return str;
+    }
+};
+
+链接：https://www.nowcoder.com/questionTerminal/12d959b108cb42b1ab72cef4d36af5ec
+来源：牛客网
+
+class Solution {
+public:
+    string LeftRotateString(string str, int n) {
+           string l,r;
+           for(int i=0;i<n;i++) r+=str[i];
+           for(int i=n;i<str.size();i++) l+=str[i];
+           return l+r;
+    }
+};
+

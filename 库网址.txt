@@ -1,0 +1,39 @@
+sklearn手册：http://cwiki.apachecn.org/pages/viewpage.action?pageId=10030181
+pandas中文：http://www.cnblogs.com/chaosimple/p/4153083.html
+Ufldl Tutorial中文: http://ufldl.stanford.edu/wiki/index.php/Softmax%E5%9B%9E%E5%BD%92
+十分钟搞定pandas：https://www.cnblogs.com/chaosimple/p/4153083.html
+
+wepon github:https://github.com/wepe
+byran的CSDN：http://my.csdn.net/bryan__
+余音github：https://github.com/lytforgood
+金老师的知乎专栏：https://zhuanlan.zhihu.com/p/25075950
+july的CSDN:http://my.csdn.net/v_july_v
+寒小阳github：https://github.com/HanXiaoyang
+kaggle群苍老师github（含nlp项目）:https://github.com/qqgeogor 
+浪叫兽github JDD：https://github.com/zhangtianle/jd
+我曾经被山河大海跨过的CSDN：http://blog.csdn.net/sb19931201/article/details/52226029?locationNum=3
+KDD CUP2012腾讯CTR预估：https://www.kaggle.com/c/kddcup2012-track2
+KDD CUP2012腾讯微博推荐系统：https://www.kaggle.com/c/kddcup2012-track1
+kaggle判断相同意图句子nlp项目：https://www.kaggle.com/c/quora-question-pairs
+阿里音乐流行趋势预测大赛排名613的代码：strint/AliMusicTrendPredict
+知乎时间序列的一点讨论：https://www.zhihu.com/question/21229371
+余音的GBDT示例和trick(代码)非常赞:https://github.com/lytforgood/MachineLearningTrick
+
+stacking：https://github.com/InsaneLife/MyPicture/blob/master/ensemble_stacking.py
+blending：https://github.com/InsaneLife/MyPicture/blob/master/ensemble_blending.py
+几个中文比赛源代码及策划书链接：https://www.zhihu.com/question/47753416
+龙心尘CSDN：http://blog.csdn.net/longxinchen_ml
+知乎python代码阅读github网址：https://www.zhihu.com/question/25697796
+ThunderSVM项目地址（Ryan的朋友）：https://github.com/zeyiwen?tab=repositories
+
+动态规划较好的入门讲解CSDN博客（附带leetcode）http://blog.csdn.net/daigualu/article/details/78431090
+o2o:http://www.ppvke.com/Blog/archives/42087
+SQL与pandas的几个函数例子：https://www.cnblogs.com/en-heng/p/5630849.html
+
+win10 xgboost(已经编译了):http://blog.csdn.net/xizero00/article/details/73008330
+应用班推荐系统kaggle：https://www.kaggle.com/c/event-recommendation-engine-challenge
+pandas分组和聚合groupby apply：http://www.sohu.com/a/145672489_752099
+concat join merge详细图文并茂：http://blog.csdn.net/u012155582/article/details/52777886
+离职员工预测视频：http://www.chinahadoop.cn/course/1049/learn#lesson/19800
+
+梯度下降法找到的一定是下降最快的方向么？（配图） ：https://ask.julyedu.com/question/85251

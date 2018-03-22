@@ -1,0 +1,30 @@
+链接：https://www.nowcoder.com/questionTerminal/e02fdb54d7524710a7d664d082bb7811
+来源：牛客网
+
+//异或的方法
+class Solution {
+public:
+    void FindNumsAppearOnce(vector<int> data,int* num1,int *num2) {
+        int diff=accumulate(data.begin(),data.end(),0,bit_xor<int>());
+        diff&=-diff;  //即找到最右边1-bit
+        *num1=0;*num2=0;
+        for (auto c:data) {
+            if ((c&diff)==0) *num1^=c;
+            else *num2^=c;
+        }
+    }
+};
+//哈希表
+class Solution {
+public:
+   void FindNumsAppearOnce(vector<int> data, int* num1, int *num2) {
+    unordered_map<int, int> map;
+    for (int i = 0; i < data.size(); i++)
+        map[data[i]]++;
+    vector<int>v;
+    for (int i = 0; i < data.size(); i++)
+        if (map[data[i]]== 1)
+            v.push_back(data[i]);
+    *num1 = v[0]; *num2 = v[1];
+    }
+};

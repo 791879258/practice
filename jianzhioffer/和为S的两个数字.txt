@@ -1,0 +1,27 @@
+链接：https://www.nowcoder.com/questionTerminal/390da4f7a00f44bea7c2f3d19491311b
+来源：牛客网
+
+//开始还在纠结乘积最小，后来转念一想，a+b=sum,a和b越远乘积越小，而一头一尾两个指针往内靠近的方法找到的就是乘积最小的情况。如果是乘积最大的情况就是一直找到两个指针重合，每次找到一个就将之前返回的结果向量清空然后更新为新找到的。
+class Solution {
+public:
+    vector<int> FindNumbersWithSum(vector<int> array,int sum) {
+        vector<int> result;
+        int length = array.size();
+        int start = 0;
+        int end = length - 1;
+        while (start < end)
+        {
+            if (array[start] + array[end] == sum)
+            {
+                result.push_back(array[start]);
+                result.push_back(array[end]);
+                break;
+            }
+            else if (array[start] + array[end] < sum)
+                start++;
+            else
+                end--;
+        }
+        return result;
+    }
+};

@@ -1,0 +1,26 @@
+链接：https://www.nowcoder.com/questionTerminal/623a5ac0ea5b4e5f95552655361ae0a8
+来源：牛客网
+
+/*
+ *   对<a href="http://www.nowcoder.com/profile/938288">BoTinker的完善
+ */
+class Solution {
+public:
+    // Parameters:
+    //        numbers:     an array of integers
+    //        length:      the length of array numbers
+    //        duplication: (Output) the duplicated number in the array number
+    // Return value:       true if the input is valid, and there are some duplications in the array number
+    //                     otherwise false
+    bool duplicate(int numbers[], int length, int* duplication) {     
+        for(int i=0;i<length;i++){           
+            int j=numbers[i]%length;
+            numbers[j]+=length;
+            if(numbers[j]>=(2*length)){
+                *duplication = numbers[j]%length;
+                return true;
+            }                                 
+        }
+        return false;      
+    }
+};</a>

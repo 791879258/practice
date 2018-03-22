@@ -1,0 +1,30 @@
+链接：https://www.nowcoder.com/questionTerminal/fe6b651b66ae47d7acce78ffdd9a96c7
+来源：牛客网
+
+//参照剑指offer的思路
+class Solution {
+public:
+    vector<string> Permutation(string str) {
+        vector<string> res;
+        if(str.empty())
+            return res;
+        string tmp="";
+        recur(str,res,tmp,0);
+        return res;
+    }
+    void recur(string str,vector<string> &res,string &tmp,int start){
+        if(start==str.size()){
+            res.push_back(tmp);
+            return;
+        }   
+        for(int i=start;i<str.size();i++){
+            //判断要交换的字符是否相同，相同就不用交换直接跳过（除了start位置与自己交换的情况）
+            if(i!=start&&str[start]==str[i])
+                continue;
+            swap(str[start],str[i]);
+            tmp+=str[start];
+            recur(str,res,tmp,start+1); 
+            tmp.pop_back();  
+        }
+    } 
+};

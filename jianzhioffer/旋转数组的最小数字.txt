@@ -1,0 +1,44 @@
+链接：https://www.nowcoder.com/questionTerminal/9f3231a991af4f55b95579b44b7a01ba
+来源：牛客网
+
+
+
+public class Solution {
+    public int minNumberInRotateArray(int [] array) {
+ if(array==null||array.length==0){  return 0;}
+ 
+        int low = 0 ; int high = array.length - 1;   
+        while(low < high){
+            int mid = low + (high - low) / 2;        
+            if(array[mid] > array[high]){
+                low = mid + 1;
+            }else if(array[mid] == array[high]){
+                high = high - 1;
+            }else{
+                high = mid;
+            }   
+        }
+        return array[low];
+    }
+}//O(log(n))解法 推荐
+
+
+
+
+class Solution {
+public:
+    int minNumberInRotateArray(vector<int> rotateArray) {
+ 
+        //数组为空时
+        if(rotateArray.size() == 0)
+            return -1;
+        //前部分数据旋转
+        for(int i = 0; i < rotateArray.size() - 1; i++){
+            if (rotateArray[i] > rotateArray[i + 1])
+                return rotateArray[i + 1];
+        }
+ 
+        //全部数据旋转，相当于没有旋转，最小数即为第一个数
+        return rotateArray[0];
+    }
+};//O(n)解法 不推荐
